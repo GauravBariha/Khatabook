@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<body class="bg-zinc-100 ">
+
+
+    <nav class="flex justify-between p-3">
+        <h3  class="text-2xl tracking-tight cursor-pointer "><a href="/">Khatabook</a></h3>
+        <div class="navlinks flex gap-5">
+            <a class="tracking-tight bg-blue-400 rounded-md py-1 px-3 text-white" href="/">Home</a>
+            <a class="tracking-tight bg-blue-400 rounded-md py-1 px-3 text-white" href="/create">Create New Hisaab</a>
+        </div>
+    </nav>
+
+
+    <div class="p-10">
+        <h3 class="text-2xl font-medium mb-5 mt-10 tracking-tight">hisaab of <%= filename.split(".")[0] %> </h3>
+        <p class="font-medium text-xl mb-10"><%= filedata %></p>
+        <a class="text-white px-3 py-1 rounded-md bg-blue-400" href="/edit/<%= filename %>">edit this hisaab</a>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <main class="w-full h-screen bg-zinc-100">
+        <nav class="flex justify-between p-3">
+            <h3  class="text-2xl tracking-tight cursor-pointer "><a href="/">Khatabook</a></h3>
+         <div class="navlinks flex gap-5">
+            <a class="tracking-tight bg-blue-400 rounded-md py-1 px-3 text-white" href="/">Home</a>
+            <a class="tracking-tight bg-blue-400 rounded-md py-1 px-3 text-white" href="/create">Create New Hisaab</a>
+         </div>
+        </nav>
+
+        <div class="px-10 hisaabs">
+            <h3 class="capitalize text-2xl font-medium mb-5 mt-10 tracking-tight">create new hisaab</h3>
+            <form class="" action="/createhisaab" method="post" >
+                <input name="title" class="text-md px-3 py-2 w-1/2 mb-5 rounded-md bg-zinc-200" type="text" placeholder="Today's date will be title if no title is provided">
+                <textarea name="content" class="block w-1/2 px-3 py-2 resize-none bg-zinc-200 rounded-md" ></textarea>
+                <input type="submit" class="block mt-5 px-5 py-3 bg-blue-500 text-white rounded-md"  value="Create Hisaab">
+            </form>
+        </div>
+
+    </main> 
+</body>
+</html>
